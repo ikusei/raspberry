@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 source 'https://rubygems.org'
 
 
@@ -37,4 +39,8 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "whenever", :require => false
+gem 'lifx', :git => "https://github.com/LIFX/lifx-gem.git"
+
 

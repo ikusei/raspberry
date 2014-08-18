@@ -1,0 +1,29 @@
+<%= form_for(@bluetooth_device) do |f| %>
+  <% if @bluetooth_device.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bluetooth_device.errors.count, "error") %> prohibited this bluetooth_device from being saved:</h2>
+
+      <ul>
+      <% @bluetooth_device.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mac_adress %><br>
+    <%= f.text_field :mac_adress %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
