@@ -35,12 +35,13 @@ gem 'spring',        group: :development
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'capistrano-rails', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
 gem "whenever", :require => false
 gem 'lifx', :git => "https://github.com/LIFX/lifx-gem.git"
-
+gem 'capistrano-bundler', group: :development
+gem 'capistrano-rvm', group: :development
 
