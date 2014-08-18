@@ -23,7 +23,11 @@
     <%= f.label :active %><br>
     <%= f.check_box :active %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="lcars-row">
+    <div class="lcars-column u-1-2">
+      <%= f.submit :class => "lcars-button radius" %>
+      <%= link_to 'Back', bluetooth_devices_path, :class => "lcars-button radius" %>
+    </div>
   </div>
 <% end %>
