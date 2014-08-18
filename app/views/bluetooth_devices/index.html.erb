@@ -1,4 +1,6 @@
-<h1>Listing bluetooth_devices</h1>
+<% content_for :headline do %>
+  BLUETOOTH DEVICES
+<% end %>
 
 <table>
   <thead>
@@ -28,4 +30,9 @@
 
 <br>
 
-<%= link_to 'New Bluetooth device', new_bluetooth_device_path %>
+<div class="lcars-row">
+  <div class="lcars-column u-1-2">
+    <%= link_to 'New Bluetooth device', new_bluetooth_device_path,:class => "lcars-button radius" %>
+  </div>
+</div>
+

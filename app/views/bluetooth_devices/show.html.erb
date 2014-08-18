@@ -20,5 +20,29 @@
     <%= @status %>
 </p>
 
-<%= link_to 'Edit', edit_bluetooth_device_path(@bluetooth_device) %> |
-<%= link_to 'Back', bluetooth_devices_path %>
+<div class="lcars-row">
+  <div class="lcars-column u-1-2">
+    <%= link_to 'Edit', edit_bluetooth_device_path(@bluetooth_device), :class => "lcars-button radius" %> |
+    <%= link_to 'Back', bluetooth_devices_path, :class => "lcars-button radius"  %>
+  </div>
+</div>
+
+
+<!--
+            <p>The LCARS website CSS framework, for all of the star trek fans among us.</p>
+
+            <p>LCARS framework aims to make quick work of developing a website which will look and feel like the popular Starfleet computer interface.</p>
+            <br>
+
+            <div class="lcars-row spaced">
+              <div class="lcars-column u-1-2">
+                <b>Button Code Example</b>
+              </div>
+              <div class="lcars-column u-1-2">
+                <code><pre><span class="lcars-orange-color">&lt;a href=</span><span class="lcars-blue-color">"#"</span> <span class="lcars-orange-color">class=</span><span class="lcars-blue-color">"lcars-button radius"</span><span class="lcars-orange-color">&gt;</span>
+  Button Text
+  <span class="lcars-orange-color">&lt;span class=</span><span class="lcars-blue-color">"lcars-button-addition"</span><span class="lcars-orange-color">&gt;</span>B4<span class="lcars-orange-color">&lt;/span&gt;</span>
+<span class="lcars-orange-color">&lt;/a&gt;</span></pre></code>
+              </div>
+            </div>
+-->
